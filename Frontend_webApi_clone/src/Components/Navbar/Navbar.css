@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: aliceblue;
+}
+
+.navlist{
+    width: 30%;
+}
+
+.navlist ul{
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 1rem;
+}
