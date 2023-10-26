@@ -9,9 +9,9 @@ export default function Navbar(){
 
 <div className="navlist">
 <ul>
-    <li>Home</li>
-    <li>Docs</li>
-    <li>GitHub</li>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#Docs">Docs</a></li>
+    <li><a href="https://github.com/SalmaRepo/Web_API_Clone">GitHub</a></li>
 </ul>
 </div>
 

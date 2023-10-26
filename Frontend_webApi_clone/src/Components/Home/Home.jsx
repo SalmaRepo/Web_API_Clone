@@ -1,5 +1,6 @@
 import './Home.css'
 import { useState, useEffect,useCallback } from 'react'
+import CodeCopy from '../CodeCopy/CodeCopy'
 export default function Home({productHomeDisp}) {
     console.log(productHomeDisp)
     
@@ -7,6 +8,7 @@ export default function Home({productHomeDisp}) {
 
 
     return (
+
         <div id="Home" className="home">
             <div className="homeContent">
                 <h1>Dummy<strong>JSON</strong></h1>
@@ -26,6 +28,8 @@ export default function Home({productHomeDisp}) {
 
             </div>}
 
+            
+ 
 
         </div>
     )

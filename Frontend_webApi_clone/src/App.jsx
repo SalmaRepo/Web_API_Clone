@@ -4,6 +4,7 @@ import './App.css'
 import Home from './Components/Home/Home'
 import Navbar from './Components/Navbar/Navbar'
 import Products from './Products'
+import CodeCopy from './Components/CodeCopy/CodeCopy'
 
 function App() {
   const [products, setProducts] = useState([])
@@ -17,7 +18,7 @@ function App() {
   
 
   useEffect(() => {
-      fetch("http://localhost:4005/products")
+      fetch("http://localhost:4004/products")
       .then(res => res.json())
       .then(data => setProducts(data.products))
   }, [])
@@ -33,10 +34,14 @@ function App() {
    
       
     }, []);
-    
+
     console.log(productHomeDisp)
+  
+    
+
 
     useEffect(() => {
+     
       const intervalID = setInterval(shuffle, 2000);
       return () => clearInterval(intervalID);
     }, [shuffle]);
@@ -49,6 +54,7 @@ function App() {
     <>
       <Navbar />
       <Home productHomeDisp={productHomeDisp}/>
+     <CodeCopy/>
 
       <BrowserRouter>
         {/*  {products.map(product=>{

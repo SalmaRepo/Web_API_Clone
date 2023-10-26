@@ -17,7 +17,7 @@ app.use(morgan("tiny"))
 
 app.use(cors({origin:"http://localhost:5173"}))
 
-const PORT=4005;
+const PORT=4004;
 const prodcutType="smartphones"
 
 app.use("/products",productsRoute)
